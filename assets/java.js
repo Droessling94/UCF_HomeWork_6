@@ -9,7 +9,7 @@ const apiKey = "6b3eb49e525af78cdcfc150e2b6264bb";
 
 //****************************//
 
-const weatherApiUrl =`https://api.openweathermap.org/geo/1.0/direct?q=saintaugustine&limit=5&appid=${apiKey}`;
+const weatherApiUrl =`https://api.openweathermap.org/geo/1.0/direct?q=London&limit=5&appid=${apiKey}`;
 //****** DAY JS STUFF TO SET 5 DAY FORCAST**********//
 dayjs.extend(window.dayjs_plugin_utc);
 dayjs.extend(window.dayjs_plugin_timezone);
