@@ -94,7 +94,9 @@ header {
 /*ABOVE IS THE SEPERATION AND MAKING OF MAIN BODY BELOW HEADER*/
 
 /*BELOW IS THE MAKING OF SEARCH BAR AND SET CITYS*/
-#citySearchBox{
+#citySearchBoxContainer{
+    display: flex;
+    align-items: center;
     margin:25px;
     border-radius: 5px;;
     height: 4vh;
@@ -168,3 +170,14 @@ header {
 
         }
 /*ABOVE SEPERATES EACH DAY FOR 5DAY FORCAST*/
+
+#searchBtn {
+    height:100%;
+    max-height:100%;
+    width:20%;
+    max-width:25%;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: lightblue;
+
+}
