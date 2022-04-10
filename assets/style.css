@@ -1,0 +1,128 @@
+/*BELOW IS THE MYERS RESET I GOT FROM HIS PAGE*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+    /* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*ABOVE IS THE MYERS RESET I GOT FROM HIS PAGE*/
+
+/*BELOW IS THE CSS FOR THE HEADER AND HEADER TEXT*/
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    width: 100vw;
+    background-color: blue;
+}
+
+    #headerText {
+        color: beige;
+        font-size: xx-large;
+        font-family: monospace;
+        font-weight: bolder;
+    }
+    /*below sets the image to now allow it to overflow and go outside of parent*/
+    #headerImage {
+        max-width: 100%;
+        max-height:100%;
+    }
+/*ABOVE IS THE CSS FOR THE HEADER AND HEADER TEXT*/
+
+/*BELOW IS THE SEPERATION AND MAKING OF MAIN BODY BELOW HEADER*/
+#contentMain {
+    display: flex;
+    flex-direction: row;
+
+}
+
+    #citySearchContainer{
+        height: 100vh;
+        width: 30vw;
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+
+    }
+
+    #mainInfo{
+        flex-grow: 3;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(202, 31, 31);
+    }
+/*ABOVE IS THE SEPERATION AND MAKING OF MAIN BODY BELOW HEADER*/
+
+/*BELOW IS THE MAKING OF SEARCH BAR AND SET CITYS*/
+#citySearchBox{
+    margin:25px;
+    border-radius: 5px;;
+    height: 4vh;
+    max-width: 80%;
+    background-color: grey;
+}
+
+#searchbarText {
+    margin:25px;
+    color: beige;
+}
+
+#presetCitys {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    border-radius: 5px;;
+    height: 7vh;
+    max-width: 80%;
+    background-color: white;
+}
+/*ABOVE IS THE MAKING OF SEARCH BAR AND SET CITYS*/
+
+/*BELOW IS SEPERATING OUT 5DAY FORCAST AND CURRENT WEATHER*/
+/*ABOVE IS SEPERATING OUT 5DAY FORCAST AND CURRENT WEATHER*/
+
+/*BELOW SEPERATES THE DIFFERENT INFO BOXES FOR CURRENT WEATHER*/
+/*ABOVESEPERATES THE DIFFERENT INFO BOXES FOR CURRENT WEATHER*/
+
+/*BELOW SEPERATES EACH DAY FOR 5DAY FORCAST*/
+/*ABOVE SEPERATES EACH DAY FOR 5DAY FORCAST*/
