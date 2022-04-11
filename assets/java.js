@@ -33,32 +33,18 @@ function chosenLocationStats(lat , lon){
 dayjs.extend(window.dayjs_plugin_utc);
 dayjs.extend(window.dayjs_plugin_timezone);
 //**************************************************//
-//fetch request to check if api is working//
-//  function weatherData(weatherApi) {
-//     fetch(weatherApi)
-//     .then(function(response){
-//        return response.json()
-//     })
-//     .then(function(data) {
-//         console.log(data);
-//     });
-//  };
-// weatherData(weatherApiUrl);
-// explantion of above, calling a function named weather data, with the parameteres of 
-// weatherapi. the function fetches the weatherapi (what we are putting into the function)
-// and then returns the api's respons as a json text string. we then story that data as a variable "data"
+
 
 
 //*********BELOW IS THE EVENT LISTENERS FOR THE PRESET CITYS**************//
-document.getElementById("chicagoBtn").addEventListener('click',chosenLocationStats(41.875,-87.624)
-.then(function(){
-
+document.getElementById("chicagoBtn").addEventListener('click', function(){
+    chosenLocationStats(41.875,-87.624);
     document.getElementById("currentChosenLocation").innerText = "Chicago";
-    document.ready.getElementById("currentChosenLocationTemp").innerText = dynoLocStats.curTemp;
+    document.getElementById("currentChosenLocationTemp").innerText = dynoLocStats.curTemp;
     document.getElementById("currentChosenLocationWind").innerText = dynoLocStats.curWin;
     document.getElementById("currentChosenLocationHumidity").innerText = dynoLocStats.curHumidity;
     document.getElementById("currentChosenLocationUVindex").innerText = dynoLocStats.curUV;
-}));
+});
 document.getElementById("newYorkBtn").addEventListener('click', function(){
     chosenLocationStats(40.7127281,-74.0060152);
     document.getElementById("currentChosenLocation").innerText = "NewYork"
