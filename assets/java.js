@@ -31,7 +31,7 @@ function chosenLocationStats(latLon){
 //// function for setting up geolocation based on user input////
 function dynoLocation(chosenLocation){
     console.log(chosenLocation);
-    var dynoLoc = `http://api.openweathermap.org/geo/1.0/direct?q=${chosenLocation},&limit=5&appid=${apiKey}`;
+    var dynoLoc = `https://api.openweathermap.org/geo/1.0/direct?q=${chosenLocation},&limit=5&appid=${apiKey}`;
     fetch(dynoLoc)
     .then(function(response){
         return response.json();
