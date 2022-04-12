@@ -101,9 +101,16 @@ header {
     border-radius: 5px;;
     height: 4vh;
     max-width: 80%;
-    background-color: grey;
+    background-color: white;
 }
-
+#citySearchInputBox{
+    z-index: 1;
+    height:80%;
+    max-height: 100%;
+    width:100%;
+    max-width: 100%;
+    background-color: white
+}
 #searchbarText {
     margin:25px;
     color: beige;

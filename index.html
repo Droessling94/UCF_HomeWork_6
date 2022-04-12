@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./assets/style.css">
+    
+</head>
 </head>
 <header>
 <img id= "headerImage" src="./assets/sunshine.png" alt="image of a sun shining" >
@@ -17,32 +19,36 @@
         <p id="searchbarText">Search for a city</p>
         <div id="citySearchBoxContainer">
             <button id="searchBtn">Search</button>
-            <p id="citySearchInputBox">Type city name to search here</p>
+            <input id="citySearchInputBox" type="text" placeholder="Type city name to search here" >
+    </div>
+        <div class="presetCitys">
+
+  
+        <div id="presetCitys">
+            <p id="presetBtn" class="city">Chicago, IL</p>
         </div>
         <div id="presetCitys">
-            <p id="chicagoBtn">Chicago, IL</p>
+            <p id="newYorkBtn" class="city">NewYork, NY</p>
         </div>
         <div id="presetCitys">
-            <p id="newYorkBtn">NewYork, NY</p>
+            <p id="orlandoBtn" class="city">Orlando, FL</p>
         </div>
         <div id="presetCitys">
-            <p id="orlandoBtn">Orlando, FL</p>
+            <p id="sanFranBtn" class="city">San Francisco, CA</p>
         </div>
         <div id="presetCitys">
-            <p id="sanFranBtn">San Francisco, CA</p>
+            <p id="seattleBtn" class="city">Seattle, WA</p>
         </div>
         <div id="presetCitys">
-            <p id="seattleBtn">Seattle, WA</p>
+            <p id="denverBtn" class="city">Denver, CO</p>
         </div>
         <div id="presetCitys">
-            <p id="denverBtn">Denver, CO</p>
+            <p id="atlantaBtn" class="city">Atlanta, GA</p>
         </div>
         <div id="presetCitys">
-            <p id="atlantaBtn">Atlanta, GA</p>
+            <p id="stGeorgeBtn" class="city">St.George, UT</p>
         </div>
-        <div id="presetCitys">
-            <p id="stGeorgeBtn">St.George, UT</p>
-        </div>
+    </div>
     </div>
     <!--ABOVE IS LEFT SIDE OF SCREEN CONTAINING SEARCHBOX FOR CITYS AND PRESET CITY TILES-->
 
@@ -125,6 +131,7 @@
     crossorigin="anonymous"
   ></script>
   <!-- ABOVE IS SCRIPT FOR DAY.JS GIVE DURING STARTUP-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="./assets/java.js"></script>
 
 </section>
