@@ -89,7 +89,7 @@ function chosenLocationFiveDay(latLon){
 ///// Function used for fiveday info sepcifically////
 function dynoLocationFiveDay(chosenLocation){
     console.log(chosenLocation);
-    var dynoLoc = `http://api.openweathermap.org/geo/1.0/direct?q=${chosenLocation},&limit=5&appid=${apiKey}`;
+    var dynoLoc = `https://api.openweathermap.org/geo/1.0/direct?q=${chosenLocation},&limit=5&appid=${apiKey}`;
     fetch(dynoLoc)
     .then(function(response){
         return response.json();
