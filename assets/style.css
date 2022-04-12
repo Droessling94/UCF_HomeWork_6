@@ -44,6 +44,7 @@ table {
 }
 /*ABOVE IS THE MYERS RESET I GOT FROM HIS PAGE*/
 
+
 /*BELOW IS THE CSS FOR THE HEADER AND HEADER TEXT*/
 header {
     display: flex;
@@ -77,10 +78,10 @@ header {
 
     #citySearchContainer{
         height: 100vh;
-        width: 30vw;
+        width: 25vw;
         display: flex;
         flex-direction: column;
-        background-color: black;
+        background-color: rgb(233, 233, 233);
 
     }
 
@@ -89,7 +90,7 @@ header {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        background-color: rgb(202, 31, 31);
+        background-color: rgb(233, 233, 233);
     }
 /*ABOVE IS THE SEPERATION AND MAKING OF MAIN BODY BELOW HEADER*/
 
@@ -124,7 +125,7 @@ header {
     border-radius: 5px;;
     height: 7vh;
     max-width: 80%;
-    background-color: white;
+    background-color: grey;
 }
 /*ABOVE IS THE MAKING OF SEARCH BAR AND SET CITYS*/
 
@@ -138,16 +139,48 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    align-items: center;
     background-color: aliceblue;
 }
 
 .currentChosenLocationInfoContainer{
-    background-color: lightblue;
+    background-color: aliceblue;
     height:17%;
     max-height: 20%;
     max-width: 100%;
+
 }
 
+#currentChosenLocation {
+font-size: xx-large;
+font-weight: bold;
+font-family: monospace;
+color: black;
+}
+#currentChosenLocationTemp {
+    font-size: xx-large;
+    font-weight: bold;
+    font-family: monospace;
+    color: black;
+    }
+    #currentChosenLocationWind {
+        font-size: xx-large;
+        font-weight: bold;
+        font-family: monospace;
+        color: black;
+        }
+        #currentChosenLocationHumidity {
+            font-size: xx-large;
+            font-weight: bold;
+            font-family: monospace;
+            color: black;
+            }
+            #currentChosenLocationUVindex {
+                font-size: xx-large;
+                font-weight: bold;
+                font-family: monospace;
+                color: black;
+                }
 /*ABOVE IS SEPERATING OUT 5DAY FORCAST AND CURRENT WEATHER*/
 
 /*BELOW SEPERATES THE DIFFERENT INFO BOXES FOR CURRENT WEATHER*/
@@ -160,20 +193,32 @@ header {
     align-items: center;
     justify-content: space-around;
     height: 40%;
-    background-color: blueviolet;
+    background-color: rgb(233, 233, 233);
 }
     .fivedayForcastCards {
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
+        align-items: center;
         height: 50%;
-        background-color: brown;
+        background-color: blue;
         width: 17%;
+        border-radius: 25px;
+    }
+
+    #fiveDayForcastText{
+        color: beige;
+        font-size:x-large;
+        font-family: monospace;
+        font-weight: bolder;
+
     }
         .fivedayForcastCardInfo {
             height:15%;
             width: 100%;
-            background-color: aqua;
+            background-color: white;
+            font-size: large;
+
 
         }
 /*ABOVE SEPERATES EACH DAY FOR 5DAY FORCAST*/
